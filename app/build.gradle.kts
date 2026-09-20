@@ -45,7 +45,15 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.espresso.core)
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    //Material Icons
     implementation("androidx.compose.material:material-icons-extended")
+    //Material Icons
+    implementation("androidx.compose.material:material-icons-core:1.7.8")
+    //Navigation Compose
+    implementation("androidx.navigation:navigation-compose:2.10.1")
+    //Coil Compose
+    implementation("io.coil-kt:coil-compose:2.7.0")
+
     testImplementation(libs.junit)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
@@ -53,8 +61,5 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     debugImplementation(libs.androidx.compose.ui.tooling)
-    //Navigation Compose
-    implementation("androidx.navigation:navigation-compose:2.10.1")
-    //Coil Compose
-    implementation("io.coil-kt:coil-compose:2.7.0")
+
 }
