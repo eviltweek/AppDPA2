@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "410666674745",
+    "project_id": "appdpa-575ff",
+    "storage_bucket": "appdpa-575ff.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410666674745:android:76f6fa7c0f79d14b7afbe8",
+        "android_client_info": {
+          "package_name": "com.rodrigo.appdpa2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnzeseSyVgkgVK4i3p8DSmuiRWJYc9d10"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
