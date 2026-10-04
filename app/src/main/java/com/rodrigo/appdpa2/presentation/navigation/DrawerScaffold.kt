@@ -67,6 +67,14 @@ fun DrawerScaffold(
                         navController.navigate("favorites")
                     }
                 )
+
+                NavigationDrawerItem(
+                    label = { Text("Realtime") },
+                    selected = false,
+                    onClick = {
+                        navController.navigate("realtime")
+                    }
+                )
             }
         }
     ) {

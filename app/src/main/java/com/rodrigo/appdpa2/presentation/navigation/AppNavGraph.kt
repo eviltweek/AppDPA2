@@ -8,6 +8,7 @@ import com.rodrigo.appdpa2.presentation.auth.LoginScreen
 import com.rodrigo.appdpa2.presentation.auth.RegisterScreen
 import com.rodrigo.appdpa2.presentation.home.HomeScreen
 import com.rodrigo.appdpa2.presentation.permissions.GalleryPermissionsScreen
+import com.rodrigo.appdpa2.presentation.realtime.FirestoreRealtimeScreen
 
 @Composable
 fun AppNavGraph(){
@@ -15,7 +16,7 @@ fun AppNavGraph(){
 
     NavHost(
         navController=navController,
-        startDestination = "register")
+        startDestination = "login")
     {
         composable("register") { RegisterScreen(navController) }
         composable("login") { LoginScreen(navController) }
@@ -27,6 +28,11 @@ fun AppNavGraph(){
         composable("permissions") {
             DrawerScaffold(navController) { //hace que herede el menu de navegacion
                 GalleryPermissionsScreen()
+            }
+        }
+        composable("realtime") {
+            DrawerScaffold(navController) { //hace que herede el menu de navegacion
+                FirestoreRealtimeScreen()
             }
         }
     }
