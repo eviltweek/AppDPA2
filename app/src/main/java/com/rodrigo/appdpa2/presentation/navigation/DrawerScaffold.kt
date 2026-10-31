@@ -75,6 +75,22 @@ fun DrawerScaffold(
                         navController.navigate("realtime")
                     }
                 )
+
+                NavigationDrawerItem(
+                    label = { Text("Supabase Storage") },
+                    selected = false,
+                    onClick = {
+                        navController.navigate("supabase")
+                    }
+                )
+
+                NavigationDrawerItem(
+                    label = { Text("API Football") },
+                    selected = false,
+                    onClick = {
+                        navController.navigate("apifootball")
+                    }
+                )
             }
         }
     ) {

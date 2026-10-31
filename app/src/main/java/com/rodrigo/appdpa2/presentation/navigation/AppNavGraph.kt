@@ -4,11 +4,13 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.rodrigo.appdpa2.presentation.apifootball.ApiFootballScreen
 import com.rodrigo.appdpa2.presentation.auth.LoginScreen
 import com.rodrigo.appdpa2.presentation.auth.RegisterScreen
 import com.rodrigo.appdpa2.presentation.home.HomeScreen
 import com.rodrigo.appdpa2.presentation.permissions.GalleryPermissionsScreen
 import com.rodrigo.appdpa2.presentation.realtime.FirestoreRealtimeScreen
+import com.rodrigo.appdpa2.presentation.supabase.SupabaseStorageScreen
 
 @Composable
 fun AppNavGraph(){
@@ -33,6 +35,18 @@ fun AppNavGraph(){
         composable("realtime") {
             DrawerScaffold(navController) { //hace que herede el menu de navegacion
                 FirestoreRealtimeScreen()
+            }
+        }
+
+        composable("supabase") {
+            DrawerScaffold(navController) { //hace que herede el menu de navegacion
+                SupabaseStorageScreen()
+            }
+        }
+
+        composable("apifootball") {
+            DrawerScaffold(navController) { //hace que herede el menu de navegacion
+                ApiFootballScreen()
             }
         }
     }
